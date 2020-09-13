@@ -26,27 +26,26 @@ class Counter extends Component {
 
         return (
             <>     
-            {/* <img src={this.state.imgUrl} alt=''/>   */}
+            <img src={this.state.imgUrl} alt=''/>
 
-            {/* <span style={this.style} className={this.getDynamicBadges()}>{this.formatCount()}</span>
-            <button className="btn btn-secondary btn-sm">Increament</button> */}
-            {/* create list dynamically */}
+           <span style={this.style} className={this.getDynamicBadges()}>{this.formatCount()}</span>
+            <button className="btn btn-secondary btn-sm">Increament</button>
             {this.renderTags()}
             </>
         );
     }
     
-     // for dynamic classes in "ClassName" created method getDynamicBadges()
-    // getDynamicBadges() {
-    //     let classes = "badge m-2 badge-";
-    //     classes += this.state.count === 0 ? "warning" : "primary";
-    //     return classes;
-    // }
+    // for dynamic classes in "ClassName" created method getDynamicBadges()
+    getDynamicBadges() {
+        let classes = "badge m-2 badge-";
+        classes += this.state.count === 0 ? "warning" : "primary";
+        return classes;
+    }
 
-    // formatCount(){
-    //     const { count } = this.state;
-    //     return count === 0 ? "Zero": count;
-    // }
+    formatCount(){
+        const { count } = this.state;
+        return count === 0 ? "Zero": count;
+    }
 }
  
 export default Counter;
