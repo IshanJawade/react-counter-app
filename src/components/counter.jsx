@@ -6,7 +6,7 @@ class Counter extends Component {
         count: 0,
         name:"Ishan",
         imgUrl:"https://picsum.photos/300",
-        tags: ['tag1', 'tag2', 'tag3'],
+        tags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5',]
     }
 
 
@@ -17,6 +17,17 @@ class Counter extends Component {
                </ul>
     }
 
+    // This construction syntax is used to access object in the event handler
+    constructor(){
+        super(); 
+        this.handleIncreament = this.handleIncreament.bind(this);
+    }
+
+    // onClick event handler
+    handleIncreament(){
+        console.log("Increament Cliked", this);
+    }
+
     render() { 
 
         return (
@@ -25,7 +36,7 @@ class Counter extends Component {
             <span style={this.style} className={this.getDynamicBadges()}>{this.formatCount()}</span>
 
         {/* For Button */}
-            <button className="btn btn-secondary btn-sm">Increament</button>
+            <button onClick={this.handleIncreament} className="btn btn-secondary btn-sm">Increament</button>
 
         {/* to render unordered list */}
             {/* in java script you can apply logical operations with non boolian things */}
