@@ -32,7 +32,7 @@ class Counter extends Component {
 
         return (
             <> {/* Div*/}
-        {/* For Button */}
+        {/*Decreament Button */}
         < button onClick={ () => { this.handleDencreament({ id: 1 } ); } } 
             className="btn btn-secondary btn-sm" >
                 Decreament
@@ -41,11 +41,12 @@ class Counter extends Component {
         {/* For counter printing */}
             <span style={this.style} className={this.getDynamicBadges()}>{this.formatCount()}</span>
 
-        {/* For Button */}
+        {/*Increament Button */}
             < button onClick={ () => { this.handleIncreament ({ id: 1 } ); } } 
             className="btn btn-secondary btn-sm" >
             Increament
             </button>
+        {/* Br tag to start new instance on new line */}
             <br/>
             </> // End of  Div
         );

@@ -17,11 +17,7 @@ class Counters extends Component {
 		<> 
 		{/* this will create multiple isolated insatces of counter.jsx */}
 			{ this.state.counter.
-				map(
-					counter => (
-						<Counter key={counter.id} value={counter.value} /> 
-					)
-				)
+				map(counter => (<Counter key={counter.id} value={counter.value} />))
 			}
 		</> 
 		);
