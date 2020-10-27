@@ -5,12 +5,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css'
 import './components/counter.jsx'
-import Counter from './components/counter.jsx';
+import Counters from './components/counters.jsx';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Counter />
-  </React.StrictMode>,
+  
+    <Counters />
+  ,
   document.getElementById('root')
 );
 
