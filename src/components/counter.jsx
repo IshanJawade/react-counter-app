@@ -5,8 +5,8 @@ class Counter extends Component {
     state = { 
         count: 0,
         name:"Ishan",
-        imgUrl:"https://picsum.photos/300",
-        tags: ['tag1', 'tag2', 'tag3', 'tag4', 'tag5',]
+        //imgUrl:"https://picsum.photos/300",
+        tags: []
     }
 
 
@@ -23,9 +23,10 @@ class Counter extends Component {
         this.handleIncreament = this.handleIncreament.bind(this);
     }
 
-    // onClick event handler
+    // onClick event handler Increaments Count 
     handleIncreament(){
-        console.log("Increament Cliked", this);
+        console.log("Increament Cliked", this.state.count + 1);
+        this.setState({ count: this.state.count + 1 });
     }
 
     render() { 
