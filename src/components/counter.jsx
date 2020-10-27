@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Counter extends Component {
     // state is a object in JavaScript
     state = { 
-        value: 0
+        value: 0,
     }
 
 
@@ -44,7 +44,7 @@ class Counter extends Component {
         {/* For Button */}
             < button onClick={ () => { this.handleIncreament ({ id: 1 } ); } } 
             className="btn btn-secondary btn-sm" >
-                Increament
+            Increament
             </button>
             <br/>
             </> // End of  Div
