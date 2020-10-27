@@ -16,7 +16,8 @@ class Counter extends Component {
     // onClick event handler Decreaments Count 
     handleDencreament = (product) => {
         // This line will tell the react that the state is going to be changed
-        this.setState({ value: this.state.value - 1 });
+        this.state.value > 0 ? this.setState({ value: this.state.value - 1 }) : 
+        this.state.value = 0;
     }
 
     // onClick event handler Increaments Count 
