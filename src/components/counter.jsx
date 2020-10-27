@@ -6,7 +6,7 @@ class Counter extends Component {
         count: 0,
         name:"Ishan",
         //imgUrl:"https://picsum.photos/300",
-        tags: []
+        //tags: []
     }
 
 
@@ -42,8 +42,8 @@ class Counter extends Component {
         {/* to render unordered list */}
             {/* in java script you can apply logical operations with non boolian things */}
             {/* So this can be used as if statement without else part */}
-            { this.state.tags.length === 0 && 'Please create new tags' }
-            {this.renderTags()}
+            {/* this.state.tags.length === 0 && 'Please create new tags' */}
+            {/*this.renderTags()*/}
             </>
         );
     }
