@@ -4,7 +4,7 @@
 ### How to Run 
 
 Download this repository:
-`git clone https://github.com/IshanJawade/weather-app.git`
+`git clone https://github.com/IshanJawade/react-counter-app.git`
 
 go in the downloaded repository:\
 `cd react-counter-app-main/`
