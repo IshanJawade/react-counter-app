@@ -1,5 +1,5 @@
 # Counter Application 
-### Created using React
+### Developed using React
 
 ### How to Run 
 
