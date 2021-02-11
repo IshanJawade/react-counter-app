@@ -7,7 +7,7 @@ Download this repository:
 `git clone https://github.com/IshanJawade/react-counter-app.git`
 
 go in the downloaded repository:\
-`cd react-counter-app-main/`
+`cd react-counter-app-master/`
 
 Dowanload dependencies:\
 `npm i `
