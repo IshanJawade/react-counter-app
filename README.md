@@ -1,6 +1,12 @@
 # Counter Application 
 ### Developed using React
 
+A web application in which you can increase and decrease the value of counters. After clicking on reset it will reset to zero.
+
+### Screenshots
+![](images/home.jpg)
+![](images/after.jpg)
+
 ### How to Run 
 
 Download this repository:
