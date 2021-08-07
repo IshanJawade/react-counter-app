@@ -31,7 +31,7 @@ class Counter extends Component {
         console.log('props', this.props);
 
         return (
-            <> {/* Div*/}
+            <div> {/* Div*/}
         {/*Decreament Button */}
         < button onClick={ () => { this.handleDencreament({ id: 1 } ); } } 
             className="btn btn-secondary btn-sm" >
@@ -48,7 +48,7 @@ class Counter extends Component {
             </button>
         {/* Br tag to start new instance on new line */}
             <br/>
-            </> // End of  Div
+            </div> // End of  Div
         );
     }
 
